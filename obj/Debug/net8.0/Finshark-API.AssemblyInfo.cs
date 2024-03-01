@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Finshark-API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1202639cf60e637a1e7cc25d729634b6bb6190bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Finshark-API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Finshark-API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
