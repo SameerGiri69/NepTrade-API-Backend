@@ -55,5 +55,19 @@ namespace Finshark_API.Controllers
 
             return Ok(myStock.ToStockDto());
         }
+        [HttpDelete]
+        [Route("{id}")]
+        public IActionResult Delete([FromRoute] int id)
+        {
+            var stock = _context.stocks.Find(id);
+
+            if (stock == null) return NotFound();
+
+            _context.Remove(stock);
+            _context.SaveChanges();
+
+            return NoContent();
+
+        }
     }
 }
