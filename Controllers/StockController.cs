@@ -1,4 +1,5 @@
 ﻿using Finshark_API.Data;
+using Finshark_API.DTOs.Stock;
 using Finshark_API.Mappers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -27,6 +28,15 @@ namespace Finshark_API.Controllers
             if (stock == null) return NotFound();
             return Ok(stock.ToStockDto());
         }
-       
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] CreateStockDto stockDto)
+        {
+            var stockmodel = stockDto.ToStockFromCreateDto();
+            _context.Add(stockmodel);
+            _context.SaveChanges();
+            // Create at action invokes the GetStockById and passes in the id then after it gets the stock object it returns StockDto after mapping
+            return CreatedAtAction(nameof(GetStockById), new {id=stockmodel.Id},stockmodel.ToStockDto());
+            
+        }
     }
 }
