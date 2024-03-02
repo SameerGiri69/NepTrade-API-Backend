@@ -7,7 +7,7 @@ namespace Finshark_API.Mappers
     {
         public static StockDto ToStockDto(this Stock stock)
         {
-            var stockDto = new StockDto()
+            return new StockDto()
             {
                 Id = stock.Id,
                 CompanyName = stock.CompanyName,
@@ -17,7 +17,20 @@ namespace Finshark_API.Mappers
                 Purchase = stock.Purchase,
                 Symbol = stock.Symbol,
             };
-            return stockDto;
+            
+        }
+        public static Stock ToStockFromCreateDto(this CreateStockDto dtoStock)
+        {
+            return new Stock()
+            {
+                CompanyName = dtoStock.CompanyName,
+                Symbol = dtoStock.Symbol,
+                Industry = dtoStock.Industry,
+                LastDiv = dtoStock.LastDiv,
+                MarketCap = dtoStock.MarketCap,
+                Purchase = dtoStock.Purchase,
+            };
+            
         }
     }
 }
