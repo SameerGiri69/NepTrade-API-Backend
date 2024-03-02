@@ -32,5 +32,17 @@ namespace Finshark_API.Mappers
             };
             
         }
+        public static Stock ToStockFromUpdateDto(this UpdateStockDto dtoStock)
+        {
+            return new Stock()
+            {
+                CompanyName = dtoStock.CompanyName,
+                Symbol = dtoStock.Symbol,
+                Industry = dtoStock.Industry,
+                LastDiv = dtoStock.LastDiv,
+                MarketCap = dtoStock.MarketCap,
+                Purchase = dtoStock.Purchase,
+            };
+        }
     }
 }
