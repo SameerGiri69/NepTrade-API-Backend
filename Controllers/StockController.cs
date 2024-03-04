@@ -11,12 +11,10 @@ namespace Finshark_API.Controllers
     [ApiController]    
     public class StockController : Controller
     {
-        private readonly ApplicationDbContext _context;
         private readonly IStockInterface _stockInterface;
 
-        public StockController(ApplicationDbContext context, IStockInterface stockInterface)
+        public StockController(IStockInterface stockInterface)
         {
-            _context = context;
             _stockInterface = stockInterface;
         }
         [HttpGet]
@@ -26,14 +24,14 @@ namespace Finshark_API.Controllers
             return Ok(stocks);
         }
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetStockById([FromRoute] int id)
+        public IActionResult GetStockById([FromRoute] int id)
         {
             var stock = _stockInterface.GetStockById(id);
             if (stock == null) return NotFound();
             return Ok(stock.ToStockDto());
         }
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] CreateStockDto stockDto)
+        public IActionResult Create([FromBody] CreateStockDto stockDto)
         {
             var result = _stockInterface.Create(stockDto);
                 
@@ -44,12 +42,16 @@ namespace Finshark_API.Controllers
         [Route("{id}")]
         public IActionResult Update([FromRoute] int id, [FromBody] UpdateStockDto updateDto)
         {
-            var myStock = _context.stocks.Find(id);
-            if(myStock == null) return NotFound();
+            try
+            { 
+                var result = _stockInterface.UpdateStock(updateDto, id);
 
-            var result = _stockInterface.UpdateStock(myStock,updateDto);
-            
-            return Ok(result.ToStockDto());
+                return Ok(result.ToStockDto());
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
         [HttpDelete]
         [Route("{id}")]
@@ -57,7 +59,7 @@ namespace Finshark_API.Controllers
         {
 
             var result = _stockInterface.DeleteStock(id);
-            if (result == false) return BadRequest();
+            if (result == false) return BadRequest(); 
 
             return NoContent();
 
