@@ -8,7 +8,7 @@ namespace Finshark_API.Interfaces
         public Stock GetStockById(int id);
         public IEnumerable<StockDto> GetAllStocks();
         public Stock Create(CreateStockDto stock);
-        public Stock UpdateStock(Stock stock, UpdateStockDto updateDto);
+        public Stock UpdateStock(UpdateStockDto updateDto, int id);
         public bool DeleteStock(int id);
         public bool Save();
     }

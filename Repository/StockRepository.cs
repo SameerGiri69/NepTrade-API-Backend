@@ -46,9 +46,9 @@ namespace Finshark_API.Repository
             return stock;
         }
 
-        public Stock UpdateStock(Stock myStock, UpdateStockDto updateDto)
+        public Stock UpdateStock( UpdateStockDto updateDto, int id)
         {
-            
+            var myStock = _context.stocks.Find(id); 
             myStock.Symbol = updateDto.Symbol;
             myStock.MarketCap = updateDto.MarketCap;
             myStock.Purchase = updateDto.Purchase;
