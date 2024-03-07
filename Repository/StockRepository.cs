@@ -36,13 +36,14 @@ namespace Finshark_API.Repository
 
         public IEnumerable<StockDto> GetAllStocks()
         {
-            var stocks =  _context.stocks.AsEnumerable().Select(s=>s.ToStockDto());
+            // Include keyword means EAGER LOADING, Select keyword means PROJECTION FUNCTION/METHOD
+            var stocks = _context.stocks.Include(c => c.Comments).AsEnumerable().Select(s => s.ToStockDto()).ToList();
             return stocks;
         }
 
         public Stock GetStockById(int id)
         {
-            var stock = _context.stocks.Find(id);
+            var stock = _context.stocks.Include(c => c.Comments).FirstOrDefault(x=>x.Id == id);
             return stock;
         }
 
@@ -64,6 +65,11 @@ namespace Finshark_API.Repository
             var result =  _context.SaveChanges();
             if (result < 0) return false;
             return true;
+        }
+
+        public async Task<bool> StockExists(int id)
+        {
+            return await _context.stocks.AnyAsync(s=>s.Id == id);
         }
     }
 }

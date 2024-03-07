@@ -11,5 +11,6 @@ namespace Finshark_API.Interfaces
         public Stock UpdateStock(UpdateStockDto updateDto, int id);
         public bool DeleteStock(int id);
         public bool Save();
+        Task<bool> StockExists(int id);
     }
 }
