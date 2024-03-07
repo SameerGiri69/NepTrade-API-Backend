@@ -16,6 +16,8 @@ namespace Finshark_API.Mappers
                 MarketCap = stock.MarketCap,
                 Purchase = stock.Purchase,
                 Symbol = stock.Symbol,
+                Comments = stock.Comments.Select(c=>c.ToCommentDtoFromComment()).ToList()
+                
             };
             
         }

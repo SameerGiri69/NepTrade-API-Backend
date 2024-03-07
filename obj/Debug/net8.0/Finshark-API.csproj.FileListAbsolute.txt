@@ -135,3 +135,7 @@ D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\obj\Debug\n
 D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\obj\Debug\net8.0\Finshark-API.pdb
 D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\obj\Debug\net8.0\Finshark-API.genruntimeconfig.cache
 D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\obj\Debug\net8.0\ref\Finshark-API.dll
+D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
