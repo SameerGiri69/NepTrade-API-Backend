@@ -60,7 +60,9 @@ namespace Finshark_API.Repository
                 }
             }
 
-            return stocks;
+            var skipNumber = (query.PageNumber - 1) * query.PageSize;   
+
+            return stocks.Skip(skipNumber).Take(query.PageSize);
         }
 
         public Stock GetStockById(int id)
