@@ -1,5 +1,6 @@
 ﻿using Finshark_API.Data;
 using Finshark_API.DTOs.Stock;
+using Finshark_API.Helpers;
 using Finshark_API.Interfaces;
 using Finshark_API.Mappers;
 using Microsoft.AspNetCore.Mvc;
@@ -18,9 +19,10 @@ namespace Finshark_API.Controllers
             _stockInterface = stockInterface;
         }
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult GetAll([FromQuery] QueryObject query)
         {
-            var stocks = _stockInterface.GetAllStocks();
+            var stocks = _stockInterface.GetAllStocks(query);
+            var stockDto = stocks.Select(s=>s.ToStockDto()).ToList();
             return Ok(stocks);
         }
         [HttpGet("{id:int}")]
@@ -33,6 +35,8 @@ namespace Finshark_API.Controllers
         [HttpPost]
         public IActionResult Create([FromBody] CreateStockDto stockDto)
         {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
             var result = _stockInterface.Create(stockDto);
                 
             // Create at action invokes the GetStockById and passes in the id then after it gets the stock object it returns StockDto after mapping
@@ -42,6 +46,8 @@ namespace Finshark_API.Controllers
         [Route("{id:int}")]
         public IActionResult Update([FromRoute] int id, [FromBody] UpdateStockDto updateDto)
         {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
             try
             { 
                 var result = _stockInterface.UpdateStock(updateDto, id);

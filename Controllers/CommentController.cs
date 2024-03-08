@@ -36,6 +36,8 @@ namespace Finshark_API.Controllers
         [HttpPost("{stockId:int}")]
         public async Task<IActionResult> Create([FromRoute] int stockId, WriteCommentDto commentDto)
         {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
             if(!await _stockInterface.StockExists(stockId))
             {
                 return BadRequest("Stock does not exists");
@@ -56,6 +58,8 @@ namespace Finshark_API.Controllers
         [HttpPut("{commentId}")]
         public async Task<IActionResult> Update([FromRoute] int commentId, UpdateCommentDto dto)
         {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
             var cExists = await _commentInterface.CommentExistsAsync(commentId);
             if (cExists == null) return NotFound("Could not find specified comment");
 
