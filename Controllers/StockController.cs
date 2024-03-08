@@ -33,6 +33,8 @@ namespace Finshark_API.Controllers
         [HttpPost]
         public IActionResult Create([FromBody] CreateStockDto stockDto)
         {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
             var result = _stockInterface.Create(stockDto);
                 
             // Create at action invokes the GetStockById and passes in the id then after it gets the stock object it returns StockDto after mapping
@@ -42,6 +44,8 @@ namespace Finshark_API.Controllers
         [Route("{id:int}")]
         public IActionResult Update([FromRoute] int id, [FromBody] UpdateStockDto updateDto)
         {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
             try
             { 
                 var result = _stockInterface.UpdateStock(updateDto, id);
