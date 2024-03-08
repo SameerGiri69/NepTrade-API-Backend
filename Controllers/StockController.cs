@@ -1,5 +1,6 @@
 ﻿using Finshark_API.Data;
 using Finshark_API.DTOs.Stock;
+using Finshark_API.Helpers;
 using Finshark_API.Interfaces;
 using Finshark_API.Mappers;
 using Microsoft.AspNetCore.Mvc;
@@ -18,9 +19,10 @@ namespace Finshark_API.Controllers
             _stockInterface = stockInterface;
         }
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult GetAll([FromQuery] QueryObject query)
         {
-            var stocks = _stockInterface.GetAllStocks();
+            var stocks = _stockInterface.GetAllStocks(query);
+            var stockDto = stocks.Select(s=>s.ToStockDto()).ToList();
             return Ok(stocks);
         }
         [HttpGet("{id:int}")]

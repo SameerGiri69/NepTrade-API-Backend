@@ -1,5 +1,6 @@
 ﻿using Finshark_API.Data;
 using Finshark_API.DTOs.Stock;
+using Finshark_API.Helpers;
 using Finshark_API.Interfaces;
 using Finshark_API.Mappers;
 using Finshark_API.Models;
@@ -34,10 +35,31 @@ namespace Finshark_API.Repository
             return Save();
         }
 
-        public IEnumerable<StockDto> GetAllStocks()
+        public IEnumerable<Stock> GetAllStocks(QueryObject query)
         {
-            // Include keyword means EAGER LOADING, Select keyword means PROJECTION FUNCTION/METHOD
-            var stocks = _context.stocks.Include(c => c.Comments).AsEnumerable().Select(s => s.ToStockDto()).ToList();
+            // If there is no query input form user then the method returns all the stocks 
+            // if there is symbol or company input the method returns the stocks which contains the 
+            // specified company / symbol 
+            // If sortBy is equals "Symbol" then the method sorts the element from the company/symbol query
+            // in ascending or descending order as the user specifies 
+            var stocks = _context.stocks.Include(c => c.Comments).AsQueryable();
+
+            if(!string.IsNullOrWhiteSpace(query.CompanyName))
+            {
+                stocks = stocks.Where(s=>s.CompanyName.Contains(query.CompanyName));
+            }
+            if (!string.IsNullOrWhiteSpace(query.Symbol))
+            {
+                stocks = stocks.Where(s => s.Symbol.Contains(query.Symbol));
+            }
+            if(!string.IsNullOrEmpty(query.SortBy))
+            {
+                if(query.SortBy.Equals("Symbol", StringComparison.OrdinalIgnoreCase))
+                {
+                    stocks = query.IsDecending ? stocks.OrderByDescending(s => s.Symbol) : stocks.OrderBy(s => s.Symbol);
+                }
+            }
+
             return stocks;
         }
 
