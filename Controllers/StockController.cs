@@ -23,7 +23,7 @@ namespace Finshark_API.Controllers
             var stocks = _stockInterface.GetAllStocks();
             return Ok(stocks);
         }
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public IActionResult GetStockById([FromRoute] int id)
         {
             var stock = _stockInterface.GetStockById(id);
@@ -39,7 +39,7 @@ namespace Finshark_API.Controllers
             return CreatedAtAction(nameof(GetStockById), new { id = result.Id }, result.ToStockDto());
         }
         [HttpPut]
-        [Route("{id}")]
+        [Route("{id:int}")]
         public IActionResult Update([FromRoute] int id, [FromBody] UpdateStockDto updateDto)
         {
             try
@@ -54,7 +54,7 @@ namespace Finshark_API.Controllers
             }
         }
         [HttpDelete]
-        [Route("{id}")]
+        [Route("{id:int}")]
         public IActionResult Delete([FromRoute] int id)
         {
 

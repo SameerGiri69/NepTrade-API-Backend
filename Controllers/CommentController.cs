@@ -26,14 +26,14 @@ namespace Finshark_API.Controllers
             return Ok(commentDto);
         }
         [HttpGet]
-        [Route("{id}")]
+        [Route("{id:int}")]
         public async Task<IActionResult> GetCommentById([FromRoute] int id)
         {
             var comment = await _commentInterface.GetByIdAsync(id);
             return Ok(comment.ToCommentDtoFromComment());
 
         }
-        [HttpPost("{stockId}")]
+        [HttpPost("{stockId:int}")]
         public async Task<IActionResult> Create([FromRoute] int stockId, WriteCommentDto commentDto)
         {
             if(!await _stockInterface.StockExists(stockId))
@@ -46,12 +46,22 @@ namespace Finshark_API.Controllers
 
             return Ok(result);
         }
-        [HttpDelete("{commentId}")]
+        [HttpDelete("{commentId:int}")]
         public async Task<IActionResult> Delete([FromRoute] int commentId)
         {
             var result = await _commentInterface.DeleteCommentAsync(commentId);
             if (result == false) return BadRequest("Comment Does not exist");
             return Ok("Comment Deleted SuccessFully");
+        }
+        [HttpPut("{commentId}")]
+        public async Task<IActionResult> Update([FromRoute] int commentId, UpdateCommentDto dto)
+        {
+            var cExists = await _commentInterface.CommentExistsAsync(commentId);
+            if (cExists == null) return NotFound("Could not find specified comment");
+
+            var commentModel = await _commentInterface.UpdateCommentAsync(cExists, dto);
+
+            return View(commentModel.ToCommentDtoFromComment());
         }
     }
 }

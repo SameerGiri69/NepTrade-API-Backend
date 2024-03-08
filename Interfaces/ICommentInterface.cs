@@ -10,6 +10,7 @@ namespace Finshark_API.Interfaces
         Task<Comment> WriteCommentAsync(Comment comment);
         Task<bool> DeleteCommentAsync(int id);
         Task<bool> SaveAsync();
-
+        Task<Comment?> CommentExistsAsync(int id);
+        Task<Comment> UpdateCommentAsync(Comment comment, UpdateCommentDto dto);
     }
 }

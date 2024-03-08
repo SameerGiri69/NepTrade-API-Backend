@@ -51,5 +51,18 @@ namespace Finshark_API.Repository
             _context.Remove(comment);
             return await SaveAsync(); 
         }
+        public async Task<Comment?> CommentExistsAsync(int id)
+        {
+            var comment = await _context.comments.FindAsync(id);
+            if (comment == null) return null;
+            return comment;
+        }
+        public async Task<Comment> UpdateCommentAsync(Comment comment, UpdateCommentDto updateDto)
+        {
+            comment.Title = updateDto.Title;
+            comment.Content = updateDto.Content;
+            await SaveAsync();
+            return updateDto.ToCommentFromUpdate();
+        }
     }
 }
