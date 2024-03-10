@@ -59,7 +59,7 @@ namespace Finshark_API.Repository
                     stocks = query.IsDecending ? stocks.OrderByDescending(s => s.Symbol) : stocks.OrderBy(s => s.Symbol);
                 }
             }
-
+    
             var skipNumber = (query.PageNumber - 1) * query.PageSize;   
 
             return stocks.Skip(skipNumber).Take(query.PageSize);
