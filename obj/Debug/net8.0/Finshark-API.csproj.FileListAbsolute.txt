@@ -139,3 +139,9 @@ D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\bin\Debug\n
 D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
