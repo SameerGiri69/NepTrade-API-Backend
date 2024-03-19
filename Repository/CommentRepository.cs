@@ -19,13 +19,13 @@ namespace Finshark_API.Repository
 
         public async Task<Comment?> GetByIdAsync(int id)
         {
-            var comments = await _context.comments.Where(x => x.Id == id).FirstOrDefaultAsync();
+            var comments = await _context.comments.Include(a => a.AppUser).FirstOrDefaultAsync(x => x.Id == id);
             return comments;
 
         }
         public async Task<List<Comment>> GetCommentsAsync()
         {
-            var comments = await _context.comments.ToListAsync();
+            var comments = await _context.comments.Include(a => a.AppUser).ToListAsync();
 
             return comments;
         }
@@ -61,8 +61,9 @@ namespace Finshark_API.Repository
         {
             comment.Title = updateDto.Title;
             comment.Content = updateDto.Content;
+
             await SaveAsync();
-            return updateDto.ToCommentFromUpdate();
+            return comment;
         }
     }
 }

@@ -7,11 +7,11 @@ using System.Text;
 
 namespace Finshark_API.Repository
 {
-    public class ITokenRepository : ITokenInterface
+    public class TokenRepository : ITokenInterface
     {
         private readonly IConfiguration _config;
         private readonly SymmetricSecurityKey _key;
-        public ITokenRepository(IConfiguration config)
+        public TokenRepository(IConfiguration config)
         {
             _config = config;
             _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["JWT:SigningKey"]));

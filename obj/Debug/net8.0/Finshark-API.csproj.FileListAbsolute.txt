@@ -145,3 +145,299 @@ D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\bin\Debug\n
 D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 D:\All Projects\E-Commerce\Latest Projects\Finshark-API\Finshark-API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\Finshark-API.csproj.AssemblyReference.cache
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\Finshark-API.GeneratedMSBuildEditorConfig.editorconfig
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\Finshark-API.AssemblyInfoInputs.cache
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\Finshark-API.AssemblyInfo.cs
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\Finshark-API.csproj.CoreCompileInputs.cache
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\Finshark-API.MvcApplicationPartsAssemblyInfo.cs
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\Finshark-API.MvcApplicationPartsAssemblyInfo.cache
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\Finshark-API.sourcelink.json
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\Finshark-API.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\refint\Finshark-API.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\Finshark-API.pdb
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\appsettings.Development.json
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\appsettings.json
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Finshark-API.exe
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Finshark-API.deps.json
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Finshark-API.runtimeconfig.json
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Finshark-API.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Finshark-API.pdb
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Azure.Core.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Azure.Identity.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Humanizer.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\System.CodeDom.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\System.Memory.Data.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\staticwebassets.build.json
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\staticwebassets.development.json
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\staticwebassets\msbuild.Finshark-API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\staticwebassets\msbuild.build.Finshark-API.props
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Finshark-API.props
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Finshark-API.props
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\staticwebassets.pack.json
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\scopedcss\bundle\Finshark-API.styles.css
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\Finshark.AC1F98BE.Up2Date
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\Finshark-API.genruntimeconfig.cache
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\obj\Debug\net8.0\ref\Finshark-API.dll
+D:\AAASAMEER\All Projects\Finance-API\Finshark-API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\appsettings.Development.json
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\appsettings.json
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Finshark-API.exe
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Finshark-API.deps.json
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Finshark-API.runtimeconfig.json
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Finshark-API.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Finshark-API.pdb
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Azure.Core.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Azure.Identity.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Humanizer.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\System.CodeDom.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\System.Memory.Data.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\Finshark-API.csproj.AssemblyReference.cache
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\Finshark-API.GeneratedMSBuildEditorConfig.editorconfig
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\Finshark-API.AssemblyInfoInputs.cache
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\Finshark-API.AssemblyInfo.cs
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\Finshark-API.csproj.CoreCompileInputs.cache
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\Finshark-API.MvcApplicationPartsAssemblyInfo.cs
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\Finshark-API.MvcApplicationPartsAssemblyInfo.cache
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\Finshark-API.sourcelink.json
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\staticwebassets.build.json
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\staticwebassets.development.json
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\staticwebassets\msbuild.Finshark-API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\staticwebassets\msbuild.build.Finshark-API.props
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Finshark-API.props
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Finshark-API.props
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\staticwebassets.pack.json
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\scopedcss\bundle\Finshark-API.styles.css
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\Finshark.AC1F98BE.Up2Date
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\Finshark-API.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\refint\Finshark-API.dll
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\Finshark-API.pdb
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\Finshark-API.genruntimeconfig.cache
+D:\AAASAMEER\All Projects\Api Clone for VS Code\Finshark-API\obj\Debug\net8.0\ref\Finshark-API.dll

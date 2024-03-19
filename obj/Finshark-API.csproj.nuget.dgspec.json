@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\All Projects\\E-Commerce\\Latest Projects\\Finshark-API\\Finshark-API\\Finshark-API.csproj": {}
+    "D:\\AAASAMEER\\All Projects\\Api Clone for VS Code\\Finshark-API\\Finshark-API.csproj": {}
   },
   "projects": {
-    "D:\\All Projects\\E-Commerce\\Latest Projects\\Finshark-API\\Finshark-API\\Finshark-API.csproj": {
+    "D:\\AAASAMEER\\All Projects\\Api Clone for VS Code\\Finshark-API\\Finshark-API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\All Projects\\E-Commerce\\Latest Projects\\Finshark-API\\Finshark-API\\Finshark-API.csproj",
+        "projectUniqueName": "D:\\AAASAMEER\\All Projects\\Api Clone for VS Code\\Finshark-API\\Finshark-API.csproj",
         "projectName": "Finshark-API",
-        "projectPath": "D:\\All Projects\\E-Commerce\\Latest Projects\\Finshark-API\\Finshark-API\\Finshark-API.csproj",
-        "packagesPath": "C:\\Users\\HogRider\\.nuget\\packages\\",
-        "outputPath": "D:\\All Projects\\E-Commerce\\Latest Projects\\Finshark-API\\Finshark-API\\obj\\",
+        "projectPath": "D:\\AAASAMEER\\All Projects\\Api Clone for VS Code\\Finshark-API\\Finshark-API.csproj",
+        "packagesPath": "C:\\Users\\prabh\\.nuget\\packages\\",
+        "outputPath": "D:\\AAASAMEER\\All Projects\\Api Clone for VS Code\\Finshark-API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\HogRider\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\prabh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,12 +34,21 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.2, )"
@@ -92,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

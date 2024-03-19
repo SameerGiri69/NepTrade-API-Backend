@@ -1,6 +1,10 @@
 ﻿using Finshark_API.DTOs.Comment;
+using Finshark_API.Helpers;
 using Finshark_API.Interfaces;
 using Finshark_API.Mappers;
+using Finshark_API.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Finshark_API.Controllers
@@ -11,11 +15,14 @@ namespace Finshark_API.Controllers
     {
         private readonly ICommentInterface _commentInterface;
         private readonly IStockInterface _stockInterface;
+        private readonly UserManager<AppUser> _userManager;
 
-        public CommentController(ICommentInterface commentInterface, IStockInterface stockInterface)
+        public CommentController(ICommentInterface commentInterface, IStockInterface stockInterface,
+            UserManager<AppUser> userManager)
         {
             _commentInterface = commentInterface;
             _stockInterface = stockInterface;
+            _userManager = userManager;
         }
         [HttpGet]
         public async Task<IActionResult> GetComments()
@@ -42,11 +49,14 @@ namespace Finshark_API.Controllers
             {
                 return BadRequest("Stock does not exists");
             }
-            var commentModel = commentDto.ToCommentFromWrite(stockId);
 
+            var userName = User.GetUserId();
+            var appUser = await _userManager.FindByEmailAsync(userName);
+
+            var commentModel = commentDto.ToCommentFromWrite(stockId, appUser);
             var result = await _commentInterface.WriteCommentAsync(commentModel);
 
-            return Ok(result);
+            return Ok(result.ToCommentDtoFromComment());
         }
         [HttpDelete("{commentId:int}")]
         public async Task<IActionResult> Delete([FromRoute] int commentId)
@@ -65,7 +75,12 @@ namespace Finshark_API.Controllers
 
             var commentModel = await _commentInterface.UpdateCommentAsync(cExists, dto);
 
-            return View(commentModel.ToCommentDtoFromComment());
+            var currUser = HttpContext.User.GetUserId();
+            var appuser = await _userManager.FindByEmailAsync(currUser);
+
+            commentModel.AppUser = appuser;
+
+            return Ok(commentModel.ToCommentDtoFromComment());
         }
     }
 }

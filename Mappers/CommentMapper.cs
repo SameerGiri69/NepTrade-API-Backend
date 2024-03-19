@@ -14,16 +14,19 @@ namespace Finshark_API.Mappers
                 Content = comment.Content,
                 CreatedOn = comment.CreatedOn,
                 Title = comment.Title,
-                StockId = comment.StockId
+                StockId = comment.StockId,
+                CreatedBy = comment.AppUser.UserName
             };
         }
-        public static Comment ToCommentFromWrite(this WriteCommentDto comment, int stockId)
+        public static Comment ToCommentFromWrite(this WriteCommentDto comment, int stockId, AppUser appUser)
         {
             return new Comment()
             {
                 Content = comment.Content,
                 Title = comment.Title,
-                StockId = stockId
+                StockId = stockId,
+                AppUserId = appUser.Id
+                
             };
         }
         public static Comment ToCommentFromUpdate(this UpdateCommentDto comment)

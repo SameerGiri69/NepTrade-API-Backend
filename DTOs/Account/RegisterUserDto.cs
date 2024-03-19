@@ -10,8 +10,8 @@ namespace Finshark_API.DTOs.AppUser
 
         [Required(ErrorMessage = "Password is required")]
         [Compare("ConfirmPassword",ErrorMessage ="The Passwords you just entered donot match")]
-        public string Password { get; set; }    
+        public string Password { get; set; }
         [Required]
-        public string ConfirmPasswrod { get; set; }
+        public string ConfirmPassword { get; set; }
     }
 }

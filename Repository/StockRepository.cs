@@ -42,7 +42,7 @@ namespace Finshark_API.Repository
             // specified company / symbol 
             // If sortBy is equals "Symbol" then the method sorts the element from the company/symbol query
             // in ascending or descending order as the user specifies 
-            var stocks = _context.stocks.Include(c => c.Comments).AsQueryable();
+            var stocks = _context.stocks.Include(c => c.Comments).ThenInclude(a=>a.AppUser).AsQueryable();
 
             if(!string.IsNullOrWhiteSpace(query.CompanyName))
             {
@@ -60,6 +60,7 @@ namespace Finshark_API.Repository
                 }
             }
     
+            // Pagination
             var skipNumber = (query.PageNumber - 1) * query.PageSize;   
 
             return stocks.Skip(skipNumber).Take(query.PageSize);
@@ -67,7 +68,7 @@ namespace Finshark_API.Repository
 
         public Stock GetStockById(int id)
         {
-            var stock = _context.stocks.Include(c => c.Comments).FirstOrDefault(x=>x.Id == id);
+            var stock = _context.stocks.Include(c => c.Comments).ThenInclude(a=>a.AppUser).FirstOrDefault(x=>x.Id == id);
             return stock;
         }
 
@@ -94,6 +95,13 @@ namespace Finshark_API.Repository
         public async Task<bool> StockExists(int id)
         {
             return await _context.stocks.AnyAsync(s=>s.Id == id);
+        }
+
+        public async Task<Stock> FindBySymbolAsync(string symbol)
+        {
+            var stock = await _context.stocks.Where(s => s.Symbol == symbol.ToUpper()).FirstOrDefaultAsync();
+
+            return stock;
         }
     }
 }

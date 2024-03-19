@@ -7,6 +7,7 @@ namespace Finshark_API.Interfaces
     public interface IStockInterface
     {
         Stock GetStockById(int id);
+        Task<Stock> FindBySymbolAsync(string symbol);
         IEnumerable<Stock> GetAllStocks(QueryObject query);
         Stock Create(CreateStockDto stock);
         Stock UpdateStock(UpdateStockDto updateDto, int id);

@@ -3,13 +3,14 @@ using Finshark_API.DTOs.Stock;
 using Finshark_API.Helpers;
 using Finshark_API.Interfaces;
 using Finshark_API.Mappers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Finshark_API.Controllers
 {
     [Route("api/stock")]
-    [ApiController]    
+    [ApiController]
     public class StockController : Controller
     {
         private readonly IStockInterface _stockInterface;
@@ -23,7 +24,7 @@ namespace Finshark_API.Controllers
         {
             var stocks = _stockInterface.GetAllStocks(query);
             var stockDto = stocks.Select(s=>s.ToStockDto()).ToList();
-            return Ok(stocks);
+            return Ok(stockDto);
         }
         [HttpGet("{id:int}")]
         public IActionResult GetStockById([FromRoute] int id)
