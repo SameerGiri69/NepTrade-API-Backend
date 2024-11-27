@@ -132,9 +132,16 @@ namespace Finshark_API.Controllers
         [HttpGet("logout")]
         public async Task<IActionResult> Logout()
         {
-            await HttpContext.SignOutAsync();
+            if (HttpContext.User.Identity.IsAuthenticated)
+            {
+                await HttpContext.SignOutAsync();
+                return Ok();
+            }
+            else
+            {
+                return BadRequest("you are already logged out");
+            }
 
-            return Ok();
 
         }
 

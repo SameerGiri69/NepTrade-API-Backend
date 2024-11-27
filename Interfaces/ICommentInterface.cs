@@ -1,11 +1,12 @@
 ﻿using Finshark_API.DTOs.Comment;
+using Finshark_API.Helpers;
 using Finshark_API.Models;
 
 namespace Finshark_API.Interfaces
 {
     public interface ICommentInterface
     {
-        Task<List<Comment>> GetCommentsAsync();
+        Task<List<Comment>> GetCommentsAsync(CommentQueryObject queryObject);
         Task<Comment?> GetByIdAsync(int id);
         Task<Comment> WriteCommentAsync(Comment comment);
         Task<bool> DeleteCommentAsync(int id);

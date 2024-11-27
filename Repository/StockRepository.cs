@@ -17,9 +17,8 @@ namespace Finshark_API.Repository
         {
             _context = context;
         }
-        public Stock Create(CreateStockDto stockDto)
+        public Stock Create(Stock stock)
         {
-            var stock = stockDto.ToStockFromCreateDto();
             _context.Add(stock);
             Save();
             return _context.stocks.Find(stock.Id);

@@ -1,5 +1,6 @@
 ﻿using Finshark_API.Data;
 using Finshark_API.DTOs.Comment;
+using Finshark_API.Helpers;
 using Finshark_API.Interfaces;
 using Finshark_API.Mappers;
 using Finshark_API.Models;
@@ -23,17 +24,25 @@ namespace Finshark_API.Repository
             return comments;
 
         }
-        public async Task<List<Comment>> GetCommentsAsync()
+        public async Task<List<Comment>> GetCommentsAsync(CommentQueryObject queryObject)
         {
-            var comments = await _context.comments.Include(a => a.AppUser).ToListAsync();
+            var comments = _context.comments.Include(a => a.AppUser).AsQueryable();
+                if (!string.IsNullOrWhiteSpace(queryObject.Symbol))
+            {
+                comments = comments.Where(s => s.Stock.Symbol == queryObject.Symbol);
 
-            return comments;
+            }
+            if(queryObject.IsDescending == true)
+            {
+                comments = comments.OrderByDescending(c => c.CreatedOn);
+            }
+            return await comments.ToListAsync();
         }
 
         public async Task<Comment> WriteCommentAsync(Comment comment)
         {
-            await _context.comments.AddAsync(comment);
-            await SaveAsync();
+            var result = await _context.comments.AddAsync(comment);
+            _context.SaveChanges();
             return comment;
         }
 

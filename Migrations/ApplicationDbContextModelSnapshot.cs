@@ -209,13 +209,13 @@ namespace Finshark_API.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "c4c49a0f-620c-4452-89bc-339b45260781",
+                            Id = "59d7e508-b109-4314-a82f-7a5c2bbb91f7",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "53c56eb7-80bf-4cfb-9917-e58a3b8e1616",
+                            Id = "d94fab4b-14ed-42b9-ae3a-d4e06315917b",
                             Name = "User",
                             NormalizedName = "USER"
                         });

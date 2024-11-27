@@ -23,6 +23,9 @@ builder.Services.AddScoped<IStockInterface, StockRepository>();
 builder.Services.AddScoped<ICommentInterface, CommentRepository>();
 builder.Services.AddScoped<ITokenInterface, TokenRepository>();
 builder.Services.AddScoped<IPortfolioRepository, PortfolioRepository>();
+builder.Services.AddScoped<IFMPService, IFMPRepository>();
+builder.Services.AddHttpClient<IFMPService, IFMPRepository>();
+
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
@@ -39,12 +42,6 @@ builder.Services.AddIdentity<AppUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
 
-
-
-//
-
-
-//
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
@@ -88,6 +85,13 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(x => x
+.AllowAnyMethod()
+.AllowCredentials()
+.AllowAnyHeader()
+//.WithOrigins("https://localhost:44326")
+.SetIsOriginAllowed(origin => true));
 
 app.UseAuthentication();
 app.UseAuthorization();

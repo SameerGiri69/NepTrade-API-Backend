@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.8.34525.116
+VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finshark-API", "Finshark-API\Finshark-API.csproj", "{C6847D73-C501-4D2A-A659-6D4BB1455669}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finshark-API", "Finshark-API.csproj", "{7FC54691-4C09-453D-9AB6-4251187C4C37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C6847D73-C501-4D2A-A659-6D4BB1455669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C6847D73-C501-4D2A-A659-6D4BB1455669}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C6847D73-C501-4D2A-A659-6D4BB1455669}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C6847D73-C501-4D2A-A659-6D4BB1455669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FC54691-4C09-453D-9AB6-4251187C4C37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FC54691-4C09-453D-9AB6-4251187C4C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FC54691-4C09-453D-9AB6-4251187C4C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FC54691-4C09-453D-9AB6-4251187C4C37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {60E64839-9ABA-4F52-B413-DA4BEB3A1EF2}
+		SolutionGuid = {073C2655-FC66-494D-A76E-AEC2F70A2BA6}
 	EndGlobalSection
 EndGlobal
