@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Finshark_API.Controllers
 {
+    [Authorize]
     [Route("api/comment")]
     [ApiController]
     public class CommentController : Controller
@@ -16,18 +17,21 @@ namespace Finshark_API.Controllers
         private readonly ICommentInterface _commentInterface;
         private readonly IStockInterface _stockInterface;
         private readonly UserManager<AppUser> _userManager;
+        private readonly IFMPService _fMPService;
 
         public CommentController(ICommentInterface commentInterface, IStockInterface stockInterface,
-            UserManager<AppUser> userManager)
+            UserManager<AppUser> userManager, IFMPService fMPService)
         {
             _commentInterface = commentInterface;
             _stockInterface = stockInterface;
             _userManager = userManager;
+            _fMPService = fMPService;
         }
         [HttpGet]
-        public async Task<IActionResult> GetComments()
+        [Authorize]
+        public async Task<IActionResult> GetComments([FromQuery] CommentQueryObject queryObject)
         {
-            var comments = await _commentInterface.GetCommentsAsync();
+            var comments = await _commentInterface.GetCommentsAsync(queryObject);
 
             var commentDto = comments.Select(s => s.ToCommentDtoFromComment());
             return Ok(commentDto);
@@ -37,26 +41,38 @@ namespace Finshark_API.Controllers
         public async Task<IActionResult> GetCommentById([FromRoute] int id)
         {
             var comment = await _commentInterface.GetByIdAsync(id);
+            if (comment == null) return BadRequest("comment not found");
+
             return Ok(comment.ToCommentDtoFromComment());
 
         }
-        [HttpPost("{stockId:int}")]
-        public async Task<IActionResult> Create([FromRoute] int stockId, WriteCommentDto commentDto)
+        [HttpPost("{symbol:alpha}")]
+        public async Task<IActionResult> Create([FromRoute] string symbol, WriteCommentDto commentDto)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
-            if(!await _stockInterface.StockExists(stockId))
+            var stock = await _stockInterface.FindBySymbolAsync(symbol);
+            //IF the stock doesnot exist then it creates the stock
+            if(stock == null)
             {
-                return BadRequest("Stock does not exists");
+                var stockFromFMP = await _fMPService.FindStockBySymbolAsync(symbol);
+                if(stockFromFMP == null)
+                {
+                    return BadRequest("stock doesnot exists");
+                }
+                 _stockInterface.Create(stockFromFMP);
+
             }
 
+            //If stock already exists then this runs 
             var userName = User.GetUserId();
             var appUser = await _userManager.FindByEmailAsync(userName);
 
-            var commentModel = commentDto.ToCommentFromWrite(stockId, appUser);
+            var commentModel = commentDto.ToCommentFromWrite(stock.Id, appUser);
             var result = await _commentInterface.WriteCommentAsync(commentModel);
 
-            return Ok(result.ToCommentDtoFromComment());
+            return CreatedAtAction(nameof(GetCommentById), new { id = commentModel.Id }, commentModel.ToCommentDtoFromComment());
+
         }
         [HttpDelete("{commentId:int}")]
         public async Task<IActionResult> Delete([FromRoute] int commentId)

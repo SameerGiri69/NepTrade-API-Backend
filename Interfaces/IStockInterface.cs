@@ -9,7 +9,7 @@ namespace Finshark_API.Interfaces
         Stock GetStockById(int id);
         Task<Stock> FindBySymbolAsync(string symbol);
         IEnumerable<Stock> GetAllStocks(QueryObject query);
-        Stock Create(CreateStockDto stock);
+        Stock Create(Stock stock);
         Stock UpdateStock(UpdateStockDto updateDto, int id);
         bool DeleteStock(int id);
         bool Save();

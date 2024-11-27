@@ -7,21 +7,23 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Finshark_API.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/portfolio")]
-    [Authorize]
     public class PortfolioController : Controller
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly IStockInterface _stockInterface;
         private readonly IPortfolioRepository _portfolioRepository;
+        private readonly IFMPService _fMPService;
 
         public PortfolioController(UserManager<AppUser> userManager, IStockInterface stockInterface,
-            IPortfolioRepository portfolioRepository)
+            IPortfolioRepository portfolioRepository, IFMPService fMPService)
         {
             _userManager = userManager;
             _stockInterface = stockInterface;
             _portfolioRepository = portfolioRepository;
+            _fMPService = fMPService;
         }
         [HttpGet]
         public async Task<IActionResult> GetUserPortfolio()
@@ -43,6 +45,17 @@ namespace Finshark_API.Controllers
             var user = await _userManager.FindByEmailAsync(email);
 
             var stock = await _stockInterface.FindBySymbolAsync(symbol);
+
+            if (stock == null)
+            {
+                var stockFromFMP = await _fMPService.FindStockBySymbolAsync(symbol);
+                if (stockFromFMP.Symbol == null)
+                {
+                    return BadRequest("stock doesnot exists");
+                }
+                _stockInterface.Create(stockFromFMP);
+
+            }
 
             if (stock == null) return NotFound("The stock doesn't exists");
 

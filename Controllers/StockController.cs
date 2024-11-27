@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Finshark_API.Controllers
 {
+    [Authorize]
     [Route("api/stock")]
     [ApiController]
     public class StockController : Controller
@@ -37,8 +38,8 @@ namespace Finshark_API.Controllers
         public IActionResult Create([FromBody] CreateStockDto stockDto)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
-
-            var result = _stockInterface.Create(stockDto);
+            var stock = stockDto.ToStockFromCreateDto();
+            var result = _stockInterface.Create(stock);
                 
             // Create at action invokes the GetStockById and passes in the id then after it gets the stock object it returns StockDto after mapping
             return CreatedAtAction(nameof(GetStockById), new { id = result.Id }, result.ToStockDto());
