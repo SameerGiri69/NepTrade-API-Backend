@@ -69,19 +69,19 @@ namespace Finshark_API.Controllers
 
         }
         [HttpPost("login")]
-        public async Task<IActionResult> Login(LoginUserDto loginDto)
+        public async Task<IActionResult> Login([FromBody] LoginUserDto loginUserDto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
             if (User.Identity.IsAuthenticated) return BadRequest("You are already logged in");
 
-            var user = await _userManager.FindByEmailAsync(loginDto.Email);
+            var user = await _userManager.FindByEmailAsync(loginUserDto.Email);
 
             //var user = await _userManager.Users.FirstOrDefaultAsync(x => x.UserName == myUser.UserName.ToLower());
 
             if (user == null) return Unauthorized("User doesnot exist");
 
-            var result = await _signInManager.CheckPasswordSignInAsync(user, loginDto.Password, false);
+            var result = await _signInManager.CheckPasswordSignInAsync(user, loginUserDto.Password, false);
 
             if (!result.Succeeded) return Unauthorized("Incorrect password");
 

@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Finshark_API.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Route("api/stock")]
     [ApiController]
     public class StockController : Controller

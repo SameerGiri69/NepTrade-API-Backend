@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\hogrider\\source\\repos\\Finance-API\\Finance-API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7FC54691-4C09-453D-9AB6-4251187C4C37}|Finshark-API.csproj|c:\\users\\hogrider\\source\\repos\\finance-api\\finance-api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FC54691-4C09-453D-9AB6-4251187C4C37}|Finshark-API.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FC54691-4C09-453D-9AB6-4251187C4C37}|Finshark-API.csproj|c:\\users\\hogrider\\source\\repos\\finance-api\\finance-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FC54691-4C09-453D-9AB6-4251187C4C37}|Finshark-API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FC54691-4C09-453D-9AB6-4251187C4C37}|Finshark-API.csproj|c:\\users\\hogrider\\source\\repos\\finance-api\\finance-api\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FC54691-4C09-453D-9AB6-4251187C4C37}|Finshark-API.csproj|solutionrelative:controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7FC54691-4C09-453D-9AB6-4251187C4C37}|Finshark-API.csproj|c:\\users\\hogrider\\source\\repos\\finance-api\\finance-api\\repository\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FC54691-4C09-453D-9AB6-4251187C4C37}|Finshark-API.csproj|solutionrelative:repository\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FC54691-4C09-453D-9AB6-4251187C4C37}|Finshark-API.csproj|c:\\users\\hogrider\\source\\repos\\finance-api\\finance-api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FC54691-4C09-453D-9AB6-4251187C4C37}|Finshark-API.csproj|solutionrelative:controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FC54691-4C09-453D-9AB6-4251187C4C37}|Finshark-API.csproj|c:\\users\\hogrider\\source\\repos\\finance-api\\finance-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FC54691-4C09-453D-9AB6-4251187C4C37}|Finshark-API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FC54691-4C09-453D-9AB6-4251187C4C37}|Finshark-API.csproj|c:\\users\\hogrider\\source\\repos\\finance-api\\finance-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -38,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +58,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\hogrider\\source\\repos\\Finance-API\\Finance-API\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\hogrider\\source\\repos\\Finance-API\\Finance-API\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAuwFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T04:46:21.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StockController.cs",
+              "DocumentMoniker": "C:\\Users\\hogrider\\source\\repos\\Finance-API\\Finance-API\\Controllers\\StockController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StockController.cs",
+              "ToolTip": "C:\\Users\\hogrider\\source\\repos\\Finance-API\\Finance-API\\Controllers\\StockController.cs",
+              "RelativeToolTip": "Controllers\\StockController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T04:39:55.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\hogrider\\source\\repos\\Finance-API\\Finance-API\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -58,38 +91,35 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-27T15:04:30.411Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T15:04:30.411Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\hogrider\\source\\repos\\Finance-API\\Finance-API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\hogrider\\source\\repos\\Finance-API\\Finance-API\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAF0AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwBUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T15:02:22.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T15:02:22.382Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "CommentRepository.cs",
               "DocumentMoniker": "C:\\Users\\hogrider\\source\\repos\\Finance-API\\Finance-API\\Repository\\CommentRepository.cs",
               "RelativeDocumentMoniker": "Repository\\CommentRepository.cs",
               "ToolTip": "C:\\Users\\hogrider\\source\\repos\\Finance-API\\Finance-API\\Repository\\CommentRepository.cs",
               "RelativeToolTip": "Repository\\CommentRepository.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAhwDMAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAADgvygAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T14:55:38.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T14:55:38.297Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ICommentInterface.cs",
               "DocumentMoniker": "C:\\Users\\hogrider\\source\\repos\\Finance-API\\Finance-API\\Interfaces\\ICommentInterface.cs",
               "RelativeDocumentMoniker": "Interfaces\\ICommentInterface.cs",
@@ -97,12 +127,11 @@
               "RelativeToolTip": "Interfaces\\ICommentInterface.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T14:55:15.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T14:55:15.397Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "CommentQueryObject.cs",
               "DocumentMoniker": "C:\\Users\\hogrider\\source\\repos\\Finance-API\\Finance-API\\Helpers\\CommentQueryObject.cs",
               "RelativeDocumentMoniker": "Helpers\\CommentQueryObject.cs",
@@ -110,12 +139,11 @@
               "RelativeToolTip": "Helpers\\CommentQueryObject.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T14:54:06.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T14:54:06.18Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "QueryObject.cs",
               "DocumentMoniker": "C:\\Users\\hogrider\\source\\repos\\Finance-API\\Finance-API\\Helpers\\QueryObject.cs",
               "RelativeDocumentMoniker": "Helpers\\QueryObject.cs",
@@ -123,12 +151,11 @@
               "RelativeToolTip": "Helpers\\QueryObject.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T14:53:40.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T14:53:40.767Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "CommentController.cs",
               "DocumentMoniker": "C:\\Users\\hogrider\\source\\repos\\Finance-API\\Finance-API\\Controllers\\CommentController.cs",
               "RelativeDocumentMoniker": "Controllers\\CommentController.cs",
@@ -136,8 +163,7 @@
               "RelativeToolTip": "Controllers\\CommentController.cs",
               "ViewState": "AgIAACgAAAAAAAAAAIA3wDIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T12:49:47.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T12:49:47.589Z"
             }
           ]
         }

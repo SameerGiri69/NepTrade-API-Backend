@@ -29,14 +29,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Password",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "loginUserDto",
+        "Type": "Finshark_API.DTOs.Account.LoginUserDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
