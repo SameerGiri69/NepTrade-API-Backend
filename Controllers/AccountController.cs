@@ -26,7 +26,7 @@ namespace Finshark_API.Controllers
             _tokenInterface = tokenInterface;
         }
         [HttpPost("register")]
-        public async Task<IActionResult> Register(RegisterUserDto userDto)
+        public async Task<IActionResult> Register([FromBody]RegisterUserDto userDto)
         {
             try
             {
@@ -41,7 +41,7 @@ namespace Finshark_API.Controllers
                 var appUser = new AppUser()
                 {
                     Email = userDto.Email,
-                    UserName = userDto.Email.ToUpper()
+                    UserName = userDto.UserName
                 };
 
                 var result = await _userManager.CreateAsync(appUser, userDto.Password);
