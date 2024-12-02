@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Finshark_API.Controllers
 {
-    [Authorize]
     [Route("api/comment")]
     [ApiController]
     public class CommentController : Controller
@@ -28,7 +27,6 @@ namespace Finshark_API.Controllers
             _fMPService = fMPService;
         }
         [HttpGet]
-        [Authorize]
         public async Task<IActionResult> GetComments([FromQuery] CommentQueryObject queryObject)
         {
             var comments = await _commentInterface.GetCommentsAsync(queryObject);
@@ -46,6 +44,7 @@ namespace Finshark_API.Controllers
             return Ok(comment.ToCommentDtoFromComment());
 
         }
+        [Authorize]
         [HttpPost("{symbol:alpha}")]
         public async Task<IActionResult> Create([FromRoute] string symbol, WriteCommentDto commentDto)
         {
@@ -70,8 +69,13 @@ namespace Finshark_API.Controllers
 
             var commentModel = commentDto.ToCommentFromWrite(stock.Id, appUser);
             var result = await _commentInterface.WriteCommentAsync(commentModel);
+            if (result != null)
+            {
+                return CreatedAtAction(nameof(GetCommentById), new { id = commentModel.Id }, commentModel.ToCommentDtoFromComment());
 
-            return CreatedAtAction(nameof(GetCommentById), new { id = commentModel.Id }, commentModel.ToCommentDtoFromComment());
+            }
+            else return BadRequest();
+
 
         }
         [HttpDelete("{commentId:int}")]

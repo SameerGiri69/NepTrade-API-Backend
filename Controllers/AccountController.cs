@@ -83,6 +83,18 @@ namespace Finshark_API.Controllers
 
             var result = await _signInManager.CheckPasswordSignInAsync(user, loginUserDto.Password, false);
 
+            //if (!result.Succeeded) return Unauthorized("Username not found and/or password incorrect");
+
+            //return Ok(
+            //    new UserDto
+            //    {
+            //        UserName = user.UserName,
+            //        Email = user.Email,
+            //        Token = _tokenInterface.GenerateToken(user)
+            //    }
+            //    );
+
+
             if (!result.Succeeded) return Unauthorized("Incorrect password");
 
             var claims = new List<Claim>()
@@ -96,7 +108,7 @@ namespace Finshark_API.Controllers
             AuthenticationProperties prop = new AuthenticationProperties();
             prop.ExpiresUtc = DateTime.UtcNow.AddMinutes(10);
 
-            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal,prop);
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, prop);
 
             return Ok(
                 new UserDto
