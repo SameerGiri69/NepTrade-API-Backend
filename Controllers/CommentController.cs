@@ -44,7 +44,6 @@ namespace Finshark_API.Controllers
             return Ok(comment.ToCommentDtoFromComment());
 
         }
-        [Authorize]
         [HttpPost("{symbol:alpha}")]
         public async Task<IActionResult> Create([FromRoute] string symbol, WriteCommentDto commentDto)
         {
