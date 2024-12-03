@@ -7,7 +7,7 @@ namespace Finshark_API.Helpers
     {
         public static string GetUserId(this ClaimsPrincipal user)
         {
-            return user.Claims.SingleOrDefault(x => x.Type.Equals("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname")).Value; 
+            return user.FindFirst(ClaimTypes.NameIdentifier).Value;
         }
     }
 }

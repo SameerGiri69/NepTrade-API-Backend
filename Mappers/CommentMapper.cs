@@ -10,7 +10,7 @@ namespace Finshark_API.Mappers
         {
             return new CommentDto()
             {
-                Id = comment.Id,
+                Id = comment.   Id,
                 Content = comment.Content,
                 CreatedOn = comment.CreatedOn,
                 Title = comment.Title,

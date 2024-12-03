@@ -4,6 +4,7 @@ using Finshark_API.Models;
 using Finshark_API.Repository;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.EntityFrameworkCore;
@@ -29,9 +30,10 @@ builder.Services.AddHttpClient<IFMPService, IFMPRepository>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",
-        builder => builder.AllowAnyOrigin()
+        builder => builder.WithOrigins("https://localhost:3000")
                           .AllowAnyMethod()
-                          .AllowAnyHeader());
+                          .AllowAnyHeader()
+                          .AllowCredentials());
 });
 
 
@@ -49,6 +51,7 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
 builder.Services.AddIdentity<AppUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddSwaggerGen();
+
 builder.Services.AddSwaggerGen(option =>
 {
     option.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -76,29 +79,59 @@ builder.Services.AddSwaggerGen(option =>
     });
 });
 
+//builder.Services.AddAuthentication(options =>
+//{
+//    options.DefaultAuthenticateScheme =
+//    options.DefaultChallengeScheme =
+//    options.DefaultForbidScheme =
+//    options.DefaultScheme =
+//    options.DefaultSignInScheme =
+//    options.DefaultSignOutScheme = JwtBearerDefaults.AuthenticationScheme;
+//}).AddJwtBearer(options =>
+//{
+//    options.TokenValidationParameters = new TokenValidationParameters
+//    {
+//        ValidateIssuer = true,
+//        ValidIssuer = builder.Configuration["JWT:Issuer"],
+//        ValidateAudience = true,
+//        ValidAudience = builder.Configuration["JWT:Audience"],
+//        ValidateIssuerSigningKey = true,
+//        IssuerSigningKey = new SymmetricSecurityKey(
+//            System.Text.Encoding.UTF8.GetBytes(builder.Configuration["JWT:SigningKey"])
+//        )
+//    };
+//});
+
 builder.Services.AddAuthentication(options =>
 {
-    options.DefaultAuthenticateScheme =
-    options.DefaultChallengeScheme =
-    options.DefaultForbidScheme =
-    options.DefaultScheme =
-    options.DefaultSignInScheme =
-    options.DefaultSignOutScheme = JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(options =>
-{
-    options.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuer = true,
-        ValidIssuer = builder.Configuration["JWT:Issuer"],
-        ValidateAudience = true,
-        ValidAudience = builder.Configuration["JWT:Audience"],
-        ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(
-            System.Text.Encoding.UTF8.GetBytes(builder.Configuration["JWT:SigningKey"])
-        )
-    };
-});
+    options.DefaultChallengeScheme = "Authorization";
+    options.DefaultSignInScheme = "Authorization";
+    options.DefaultAuthenticateScheme = "Authorization";
+    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+})
 
+             .AddCookie("Authorization", options =>
+             {
+                 options.Cookie.HttpOnly = false;
+                 options.SlidingExpiration = true;
+                 options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+                 options.LoginPath = "/account/login";
+                 options.LogoutPath = "/account/logout";
+                 options.AccessDeniedPath = "/error";
+
+             })
+            .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateAudience = true,
+                    ValidateIssuer = true,
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("leadingEdgeSoftwareSecret")),
+                    ValidateLifetime = true,
+                    ClockSkew = TimeSpan.FromMinutes(30)
+                };
+            });
 builder.Services.AddAntiforgery(o => o.HeaderName = "XSRF-TOKEN");
 builder.Services.AddSession();
 builder.Services.AddDistributedMemoryCache();
@@ -118,8 +151,13 @@ app.UseCors(x => x
 .AllowAnyHeader()
 //.WithOrigins("https://localhost:44326")
 .SetIsOriginAllowed(origin => true));
-
+app.UseCookiePolicy(new CookiePolicyOptions
+{
+    MinimumSameSitePolicy = SameSiteMode.None, // Allow cross-site cookies
+    Secure = CookieSecurePolicy.Always         // Requires HTTPS
+});
 app.UseAuthentication();
+
 app.UseAuthorization();
 
 
