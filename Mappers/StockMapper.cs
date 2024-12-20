@@ -50,12 +50,12 @@ namespace Finshark_API.Mappers
         {
             return new Stock()
             {
-                CompanyName = fmpStock.companyName,
-                Symbol = fmpStock.symbol,
-                Industry = fmpStock.industry,
-                LastDiv = (decimal)fmpStock.lastDiv,
-                MarketCap = fmpStock.mktCap,
-                Purchase = (decimal)fmpStock.price,
+                CompanyName = fmpStock.CompanyName,
+                Symbol = fmpStock.Symbol,
+                Industry = fmpStock.Industry,
+                LastDiv = (decimal)fmpStock.LastDiv,
+                MarketCap = fmpStock.MktCap,
+                Purchase = (decimal)fmpStock.Price,
             };
         }
 

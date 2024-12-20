@@ -29,20 +29,18 @@ namespace Finshark_API.Controllers
         public async Task<IActionResult> GetUserPortfolio()
         {
             //var email = User.GetUserId();
-            var email = HttpContext.User.GetUserId();
-            var user = await _userManager.FindByNameAsync(email);
+            var currUser = await _userManager.GetUserAsync(User);
 
 
-            var userPortfolio = _portfolioRepository.GetUserPortfolio(user);
+            var userPortfolio = _portfolioRepository.GetUserPortfolio(currUser);
             if (userPortfolio == null) return NotFound("Portfolio doesnot exists create one");
             return Ok(userPortfolio);
             
         }
         [HttpPost]
-        public async Task<IActionResult> AddPortfolio(string symbol)
+        public async Task<IActionResult> AddPortfolio([FromQuery]string symbol)
         {
-            var email = HttpContext.User.GetUserId();
-            var user = await _userManager.FindByEmailAsync(email);
+            var currUser = await _userManager.GetUserAsync(User);
 
             var stock = await _stockInterface.FindBySymbolAsync(symbol);
 
@@ -53,20 +51,17 @@ namespace Finshark_API.Controllers
                 {
                     return BadRequest("stock doesnot exists");
                 }
-                _stockInterface.Create(stockFromFMP);
-
+                var createdStock = _stockInterface.Create(stockFromFMP);
+                stock = createdStock;
             }
-
-            if (stock == null) return NotFound("The stock doesn't exists");
-
-            var userPortfolio =  _portfolioRepository.GetUserPortfolio(user);
+            var userPortfolio =  _portfolioRepository.GetUserPortfolio(currUser);
 
             if (userPortfolio.Any(x => x.Symbol.ToUpper() == symbol.ToUpper())) 
                 return BadRequest("The stock already exists in the user portfolio");
 
             var portfolioModel = new Portfolio()
             {
-                AppUserId = user.Id,
+                AppUserId = currUser.Id,
                 StockId = stock.Id
             };
 
@@ -76,19 +71,18 @@ namespace Finshark_API.Controllers
             return Created();
         }
         [HttpDelete]
-        public async Task<IActionResult> DeletePortfolio(string symbol)
+        public async Task<IActionResult> DeletePortfolio([FromQuery]string symbol)
         {
-            var email = HttpContext.User.GetUserId();
-            var user = await _userManager.FindByEmailAsync(email);
+            var currUser = await _userManager.GetUserAsync(User);
 
-            var userPortfolio =  _portfolioRepository.GetUserPortfolio(user);
+            var userPortfolio =  _portfolioRepository.GetUserPortfolio(currUser);
             if (userPortfolio == null) return NotFound("Your portfolio is empty");
 
             var filteredStock = userPortfolio.Where(s => s.Symbol.ToUpper() == symbol.ToUpper()).ToList();
 
-            if(filteredStock.Count() == 1)
+            if(filteredStock.Count() >=1   )
             {
-                await _portfolioRepository.DeletePortfolio(user, symbol);
+                await _portfolioRepository.DeletePortfolio(currUser, symbol);
             }
             else
                 return BadRequest("Stock is not in your portfolio");

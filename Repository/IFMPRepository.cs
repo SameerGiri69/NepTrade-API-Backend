@@ -29,7 +29,8 @@ namespace Finshark_API.Repository
                     var stock = tasks[0];
                     if(stock != null)
                     {
-                        return stock.ToStockFromFMP();
+                        var res =  stock.ToStockFromFMP();
+                        return res;
                     }
                     return null;
                 }
