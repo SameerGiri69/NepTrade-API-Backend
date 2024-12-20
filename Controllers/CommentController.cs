@@ -62,11 +62,9 @@ namespace Finshark_API.Controllers
 
             }
 
-            //If stock already exists then this runs 
-            var userName = User.GetUserId();
-            var appUser = await _userManager.FindByEmailAsync(userName);
+            var currUser = await _userManager.GetUserAsync(User);
 
-            var commentModel = commentDto.ToCommentFromWrite(stock.Id, appUser);
+            var commentModel = commentDto.ToCommentFromWrite(stock.Id, currUser);
             var result = await _commentInterface.WriteCommentAsync(commentModel);
             if (result != null)
             {

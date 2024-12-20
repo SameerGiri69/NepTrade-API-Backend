@@ -1,4 +1,5 @@
-﻿using Finshark_API.DTOs.Account;
+﻿using Azure;
+using Finshark_API.DTOs.Account;
 using Finshark_API.DTOs.AppUser;
 using Finshark_API.Interfaces;
 using Finshark_API.Models;
@@ -7,6 +8,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json.Linq;
 using System.Security.Claims;
 
 namespace Finshark_API.Controllers
@@ -71,42 +73,17 @@ namespace Finshark_API.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginUserDto loginUserDto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-            if (User.Identity.IsAuthenticated) return BadRequest("You are already logged in");
-
+            if (!ModelState.IsValid) return BadRequest("Please enter the required information");
             var user = await _userManager.FindByEmailAsync(loginUserDto.Email);
+            if (user == null) return BadRequest("user doesnot exists");
 
-            //var user = await _userManager.Users.FirstOrDefaultAsync(x => x.UserName == myUser.UserName.ToLower());
-
-            if (user == null) return Unauthorized("User doesnot exist");
-
-            var result = await _signInManager.CheckPasswordSignInAsync(user, loginUserDto.Password, false);
-
-
-            if (!result.Succeeded) return Unauthorized("Incorrect password");
-
-            var claims = new List<Claim>()
+            var signInRes = await _signInManager.PasswordSignInAsync(user, loginUserDto.Password, false, false);
+            if(signInRes.Succeeded)
             {
-                new Claim(ClaimTypes.NameIdentifier, user.UserName)
-            };
-
-            var userIdentity = new ClaimsIdentity(claims, "Authentication");
-
-            ClaimsPrincipal principal = new ClaimsPrincipal(userIdentity);
-            AuthenticationProperties prop = new AuthenticationProperties();
-            prop.ExpiresUtc = DateTime.UtcNow.AddMinutes(10);
-
-            await HttpContext.SignInAsync("Authorization", principal, prop);
-
-            return Ok(
-                new UserDto
-                {
-                    UserName = user.UserName,
-                    Email = user.Email,
-                    Token = _tokenInterface.GenerateToken(user)
-                }
-            );
+                var response = new { UserName = user.UserName, Email = user.Email };
+                return Ok(response);
+            }
+            return BadRequest("Signin failed");
         }
         [HttpDelete("delete")]
         public async Task<IActionResult> DeleteUser(DeleteUserDto userDto)
@@ -144,7 +121,7 @@ namespace Finshark_API.Controllers
             }
 
 
-        }
+        }   
 
 
 
